@@ -4,17 +4,35 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  background-image: url('https://img.freepik.com/vector-gratis/patron-perros-costura_1284-3639.jpg?t=st=1714664208~exp=1714667808~hmac=872e71fbbff791001ac29ec287a5462f3688668f430694b21164f372e97934b9&w=740');
-  background-size: cover;
-  background-position: center;
+  height: 100vh; /* Establece el alto del contenedor al 100% del viewport */
+   /* Elimina los márgenes para que la imagen ocupe todo el espacio */
 }
 
 .landing-page h1 {
-  background-color: rgba(255, 255, 255, 0.628); /* Fondo transparente */
-  padding: 50px; /* Añade espacio alrededor del título */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  padding: 20px; /* Añade espacio alrededor del título */
   font-family: 'Arial', sans-serif; /* Establece la fuente */
-  font-size: 50px; /* Tamaño de la fuente */
+  font-size: 40px; /* Tamaño de la fuente */
   font-weight: bold; /* Peso de la fuente */
   color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Añade un margen inferior al título */
+}
+
+.container {
+  text-align: center;
+}
+
+.landing-page button {
+  padding: 10px 70px;
+  font-size: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.landing-page button:hover {
+  background-color: #0056b3; /* Color diferente al pasar el cursor sobre el botón */
 }

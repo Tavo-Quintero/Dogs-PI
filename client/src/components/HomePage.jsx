@@ -101,61 +101,64 @@ const HomePage = () => {
   const currentItems = dogBreeds.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
+    
     <div className="home-page">
       <h1>Bienvenido A Nuestro Catálogo</h1>
 
       <SearchBar onSearch={handleSearch} searchSource={selectedOption} />
 
-      <div>
-        <label>Ordenar por:</label>
-        <select value={sortBy} onChange={handleSortChange}>
-          <option value="name">Nombre</option>
-          <option value="weight">Peso</option>
-        </select>
+      <div className="home-page-container">
+  <div className="filter-container">
+    <label>Ordenar por:</label>
+    <select value={sortBy} onChange={handleSortChange}>
+      <option value="name">Nombre</option>
+      <option value="weight">Peso</option>
+    </select>
 
-        <label>Orden:</label>
-        <select value={sortOrder} onChange={handleOrderChange}>
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
-        </select>
-      </div>
+    <label>Orden:</label>
+    <select value={sortOrder} onChange={handleOrderChange}>
+      <option value="asc">Ascendente</option>
+      <option value="desc">Descendente</option>
+    </select>
+  </div>
 
-      <div className="button-container">
-        <button className="create-button" onClick={handleClickCreate}>
-          Crear
-        </button>
-      </div>
+  <div className="button-container">
+    <button className="create-button" onClick={handleClickCreate}>
+      Crear
+    </button>
+  </div>
 
-      <div>
-        <h2>Selecciona una opción:</h2>
-        <label>
-          <input
-            type="radio"
-            value="all"
-            checked={selectedOption === "all"}
-            onChange={handleChange}
-          />
-          Todos los perros
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="db"
-            checked={selectedOption === "db"}
-            onChange={handleChange}
-          />
-          Perros de la BD
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="api"
-            checked={selectedOption === "api"}
-            onChange={handleChange}
-          />
-          Perros del API
-        </label>
-      </div>
+  <div className="radio-options-container">
+    <h2>Selecciona una opción:</h2>
+    <label>
+      <input
+        type="radio"
+        value="all"
+        checked={selectedOption === "all"}
+        onChange={handleChange}
+      />
+      Todos los perros
+    </label>
+    <label>
+      <input
+        type="radio"
+        value="db"
+        checked={selectedOption === "db"}
+        onChange={handleChange}
+      />
+      Perros de la BD
+    </label>
+    <label>
+      <input
+        type="radio"
+        value="api"
+        checked={selectedOption === "api"}
+        onChange={handleChange}
+      />
+      Perros del API
+    </label>
+  </div>
+</div>
 
       <div className="card-list">
         {currentItems.map((breed) => (

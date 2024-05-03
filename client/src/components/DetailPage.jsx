@@ -39,6 +39,7 @@ const DetailPage = () => {
     breedDetail;
 
   return (
+    <div className="background-detail">
     <div className="detail-page">
       <h1>Detalle Perro</h1>
       <h1>Nombre: {nombre}</h1>
@@ -66,6 +67,7 @@ const DetailPage = () => {
       <div className="button-container">
       <button className="create-button" onClick={onClickVolver}>Volver</button>
       </div>
+    </div>
     </div>
   );
 };

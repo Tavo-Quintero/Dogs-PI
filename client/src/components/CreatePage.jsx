@@ -69,6 +69,8 @@ const CreatePage = () => {
     navigate("/home");
   };
   return (
+    <div class="background-container">
+  <div class="form-container">
     <div className="form-page">
       <h1>Crear Nuevo Perro</h1>
       <form onSubmit={handleSubmit}>
@@ -138,11 +140,13 @@ const CreatePage = () => {
           <label htmlFor="temperamentos">Temperamentos:</label>
           <MultiSelect options={options} onChange={handleChange} />
         </div>
-        <button type="submit">Crear Perro</button>
-        <button className="create-button" onClick={onClickVolver}>
-          Volver
-        </button>
+        <button type="container">Crear Perro</button>
+        <div className="button-container">
+      <button className="create-button" onClick={onClickVolver}>Volver</button>
+      </div>
       </form>
+    </div>
+    </div>
     </div>
   );
 };

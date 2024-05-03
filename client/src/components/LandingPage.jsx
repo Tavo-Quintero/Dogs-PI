@@ -13,11 +13,13 @@ const LandingPage = () => {
       navigate('/home');
     };
     return (
+      <div className="background-container">
         <div className="container landing-page">
             <h1>Bienvenido A Nuestro Catalogos De Perros</h1>
             
             <button onClick={handleClick}>Catalogo</button>
           
+        </div>
         </div>
     );
 };

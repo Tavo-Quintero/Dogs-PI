@@ -2,7 +2,7 @@
     width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ea2f2f84;
     border-radius: 10px;
   }
   
@@ -30,16 +30,98 @@
     border-color: #007bff;
   }
   
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .background-container {
+    /* Cambiar a posición relativa para controlar el efecto de zoom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Establece el alto del contenedor al 100% del viewport */
+    margin: 0;
+    padding: 0;
+  }
+  .background-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/vector-gratis/patron-perros-costura_1284-3639.jpg?t=st=1714664208~exp=1714667808~hmac=872e71fbbff791001ac29ec287a5462f3688668f430694b21164f372e97934b9&w=740');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+    z-index: -1; /* Asegura que la imagen de fondo esté detrás del contenido */
+  }
+  .background-container:hover::after {
+    transform: scale(1.1); /* Ajusta el zoom (por ejemplo, 110% del tamaño original) */
   }
   
-  button:hover {
-    background-color: #0056b3;
+  /* Estilos para el contenedor del formulario */
+  .form-container {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar exactamente */
+    width: 400px; /* Ancho del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border: 2px solid #ea2f2f84; /* Borde del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
   }
   
+  /* Estilos adicionales para el formulario */
+  .form-page {
+    width: 100%; /* Ancho completo dentro del contenedor */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
