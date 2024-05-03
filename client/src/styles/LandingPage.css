@@ -1,0 +1,20 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/vector-gratis/patron-perros-costura_1284-3639.jpg?t=st=1714664208~exp=1714667808~hmac=872e71fbbff791001ac29ec287a5462f3688668f430694b21164f372e97934b9&w=740');
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-page h1 {
+  background-color: rgba(255, 255, 255, 0.628); /* Fondo transparente */
+  padding: 50px; /* Añade espacio alrededor del título */
+  font-family: 'Arial', sans-serif; /* Establece la fuente */
+  font-size: 50px; /* Tamaño de la fuente */
+  font-weight: bold; /* Peso de la fuente */
+  color: #333; /* Color del texto */
+}

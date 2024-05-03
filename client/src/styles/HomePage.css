@@ -1,0 +1,131 @@
+/* HomePage.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinear el contenido en la parte superior */
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px; /* Agregar un espacio superior */
+  box-sizing: border-box; /* Incluir padding en el cálculo de la altura */
+}
+
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Agregar un espacio inferior */
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* HomePage.css */
+
+.home-page {
+    padding: 20px;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el mouse */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Escalar la imagen para que llene el contenedor */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  /* Estilos CSS para la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+.home-page {
+    padding: 20px;
+    position: relative; /* Establece posición relativa para el contenedor principal */
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+  }
+  
+  .create-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-button:hover {
+    background-color: #0056b3;
+  }
