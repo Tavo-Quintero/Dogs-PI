@@ -47,12 +47,12 @@ const DetailPage = () => {
 
       <div className="detail-field">
         <label>Altura:</label>
-        <input type="text" value={altura} readOnly />
+        <input type="text" value={altura + " cm"} readOnly />
       </div>
 
       <div className="detail-field">
         <label>Peso:</label>
-        <input type="text" value={peso} readOnly />
+        <input type="text" value={peso + " kg"} readOnly />
       </div>
 
       <div className="detail-field">
